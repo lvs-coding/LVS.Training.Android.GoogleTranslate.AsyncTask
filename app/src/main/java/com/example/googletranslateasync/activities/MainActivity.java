@@ -1,4 +1,4 @@
-package com.example.googletranslateasync;
+package com.example.googletranslateasync.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,9 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.googletranslateasync.Data.Model.TranslationRequest;
-import com.example.googletranslateasync.Data.Model.TranslationTask;
-import com.example.googletranslateasync.Data.Model.TranslationTaskParams;
+import com.example.googletranslateasync.BuildConfig;
+import com.example.googletranslateasync.R;
+import com.example.googletranslateasync.interfaces.TranslationRequest;
+import com.example.googletranslateasync.models.TranslationTaskParams;
 
 public class MainActivity extends AppCompatActivity implements TranslationRequest {
     private static String LOG_TAG = MainActivity.class.getSimpleName();
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements TranslationReques
         setContentView(R.layout.activity_main);
 
         init();
+        initListener();
 
 
     }

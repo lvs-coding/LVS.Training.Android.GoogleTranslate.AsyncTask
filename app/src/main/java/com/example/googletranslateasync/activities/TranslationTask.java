@@ -1,7 +1,9 @@
-package com.example.googletranslateasync.Data.Model;
+package com.example.googletranslateasync.activities;
 
 import android.os.AsyncTask;
 
+import com.example.googletranslateasync.interfaces.TranslationRequest;
+import com.example.googletranslateasync.models.TranslationTaskParams;
 import com.google.cloud.translate.Translate;
 import com.google.cloud.translate.TranslateOptions;
 import com.google.cloud.translate.Translation;

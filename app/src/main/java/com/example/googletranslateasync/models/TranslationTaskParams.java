@@ -1,4 +1,4 @@
-package com.example.googletranslateasync.Data.Model;
+package com.example.googletranslateasync.models;
 
 /**
  * Created by laurent on 1/16/17.
