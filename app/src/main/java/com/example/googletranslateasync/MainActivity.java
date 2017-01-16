@@ -13,6 +13,7 @@ import com.example.googletranslateasync.Data.Model.TranslationTaskParams;
 
 public class MainActivity extends AppCompatActivity implements TranslationRequest {
     private static String LOG_TAG = MainActivity.class.getSimpleName();
+    private static final String API_KEY = BuildConfig.GOOGLE_TRANSLATION_API_KEY;
 
     TextView tvTranslation;
     EditText etToTranslate;
