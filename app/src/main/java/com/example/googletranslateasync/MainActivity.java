@@ -13,7 +13,7 @@ import com.example.googletranslateasync.Data.Model.TranslationTaskParams;
 
 public class MainActivity extends AppCompatActivity implements TranslationRequest {
     private static String LOG_TAG = MainActivity.class.getSimpleName();
-    private static final String API_KEY = BuildConfig.GOOGLE_TRANSLATION_API_KEY;
+    private static final String GOOGLE_TRANSLATION_API_KEY = BuildConfig.GOOGLE_TRANSLATION_API_KEY;
 
     TextView tvTranslation;
     EditText etToTranslate;
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements TranslationReques
         btnTranslate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                translate(GTRANS_API_KEY, etToTranslate.getText());
+                translate(GOOGLE_TRANSLATION_API_KEY, etToTranslate.getText().toString());
             }
         });
     }
